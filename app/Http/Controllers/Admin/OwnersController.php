@@ -25,6 +25,7 @@ class OwnersController extends Controller
         // $date_parse = Carbon::parse(now());
         // echo $date_now->year;
         // echo $date_parse;
+
         // $e_all = Owner::all();
         // $q_get = DB::table('owners')->select('name', 'created_at')->get();
         // // $q_first = DB::table('owners')->select('name')->first();
@@ -32,6 +33,8 @@ class OwnersController extends Controller
         // $c_test = collect([
         //     'name' => 'テスト'
         // ]);
+
+        // var_dump($q_first);
 
         // dd($e_all, $q_get. $q_first, $c_test);
         $owners = Owner::select('id', 'name', 'email', 'created_at')
